@@ -1,0 +1,26 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "example",
+    "email": "example@gmail.com",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:3000/users
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iml1cnkyQGdtYWlsLmNvbSIsInN1YiI6Ikl1cnkiLCJpYXQiOjE3MzAxMzQ3MDgsImV4cCI6MTczMDEzODMwOH0.h2HIjtGNT-1krzG7b8FAVS3F91otoyP70zjQKwHv0Ls
+
+###
+
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "example@gmail.com",
+    "password": "123456"
+}
+
+###
